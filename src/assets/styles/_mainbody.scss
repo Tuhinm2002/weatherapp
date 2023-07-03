@@ -1,0 +1,12 @@
+@import './section';
+@import './navbar';
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+html{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,106 @@
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+}
+
+.boxes{
+    @include flexCenter();
+    margin-bottom: 5%;
+    flex-direction: column;
+    .box1{
+        margin-top: 7%;
+        @include flexCenter();
+        margin-left: 5%;
+        margin-right: auto;
+        .temp{
+            @include flexCenter();
+            background-color: azure;
+            margin-top: 10%;
+            margin-left: 20px;
+            height: 400px;
+            width: 500px;
+            border-radius: 30px;
+            font-size: 40px;
+        }
+
+        .tempPic{
+            @include flexCenter();
+            margin-top: 10%;
+            box-sizing: border-box;
+            margin-left: 20px;
+            height: 400px;
+            width: 500px;
+            border-radius: 30px;
+            box-shadow: 0.5rem 0.5rem 0.7rem black;
+            img{
+                height: 400px;
+                width: 500px;
+                border-radius: 30px;
+            }
+        }
+
+    }
+
+    .box2{
+        @include flexCenter();
+        margin-left: 5%;
+        margin-right: auto;
+        .humid{
+            @include flexCenter();
+            background-color: azure;
+            margin-top: 10%;
+            margin-left: 5%;
+            height: 400px;
+            width: 500px;
+            border-radius: 30px;
+            font-size: 40px
+        }
+
+        .humidPic{
+            @include flexCenter();
+            margin-top: 10%;
+            box-sizing: border-box;
+            height: 400px;
+            width: 500px;
+            border-radius: 30px;
+            box-shadow: 0.5rem 0.5rem 0.7rem black;
+            img{
+                height: 400px;
+                width: 500px;
+                border-radius: 30px;
+            }
+        }
+    }
+
+    .box3{
+        @include flexCenter();
+        margin-right: auto;
+        margin-left: 10%;
+        .winds{
+            @include flexCenter();
+            background-color: azure;
+            margin-top: 10%;
+            margin-right: 5%;
+            height: 400px;
+            width: 500px;
+            border-radius: 30px;
+            font-size: 40px;
+        }
+
+        .windsPic{
+            @include flexCenter();
+            margin-top: 10%;
+            box-sizing: border-box;
+            height: 400px;
+            width: 500px;
+            border-radius: 30px;
+            box-shadow: 0.5rem 0.5rem 0.7rem black;
+            img{
+            height: 400px;
+            width: 500px;
+            border-radius: 30px;
+            }
+        }
+    }
+
+}
